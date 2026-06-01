@@ -1,0 +1,23 @@
+.text-align {
+  text-align:center;
+}
+
+.container {
+    display: grid;
+    place-items:center;
+    background-color:DEDEDE;
+}
+
+.content {
+    background-color:DEDEDE;
+    margin: 20px;
+    display: flex;
+}
+
+.box {
+    background-color:FFFFFF;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
