@@ -2,8 +2,12 @@
 const game = {
     title: "Valorant",
     genre: "FPS",
-    studio: "PC",  
+    system: "PC",
+    fullDescription: function() {
+        console.log(`${this.title} is the best game in the world. It is a ${this.genre} that you can play on ${this.system}`)
+    } 
 }
+console.log(game.fullDescription());
 
 // displaying information from the object
 document.getElementById("details").textContent = `The game you are playing is ${game.title}`;
