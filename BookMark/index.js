@@ -11,8 +11,8 @@ function saveBook() {
 
     for (book of bookLib) {
         console.log(book)
-        document.getElementById("bookList").innerHTML = bookLib.map(book => `<li>${book}</li>`).join('');
+        document.getElementById("bookList").innerHTML = bookLib.map(book => `<h3>${book}</h3>`).join('');
     }
-    
+
     reset();
 }
