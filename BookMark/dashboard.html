@@ -15,7 +15,11 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <form id="myForm">
-                <input type="text" id="bookEntry" placeholder="Add a Book">
+                <input type="text" id="currentEntry" placeholder="Add to Currently Reading">
+                <input type="button" id="resetButton" onclick="saveCurrentBook()" value="Submit"></button>
+            </form>
+            <form id="myForm">
+                <input type="text" id="bookEntry" placeholder="Add to Favorite Books">
                 <input type="button" id="resetButton" onclick="saveBook()" value="Submit"></button>
             </form>
         </ul>
@@ -32,11 +36,15 @@
             <div class="tile">
                 <h2>Favorite Books</h2>
                 <br>
-                <p id="bookList"></p>
+                <br>
+                <p id="bookItem"></p>
             </div>
 
             <div class="tile">
                 <h2>Currently Reading</h2>
+                <br>
+                <br>
+                <p id="currentRead"></p>
             </div>
 
             <div class="tile">
