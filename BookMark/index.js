@@ -26,7 +26,7 @@ function saveCurrentBook() {
     reset();
 }
 
-//Remove an item from the list
+//Remove an item from the Favoraite Books list
 function removeFav(i) {
     favoriteReads.splice(i,1)
     
@@ -37,6 +37,7 @@ function removeFav(i) {
         }
 }
 
+// Removes an item from the Currently Reading list
 function removeCurrent(i) {
     currentRead.splice(i,1)
     
